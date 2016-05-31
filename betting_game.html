@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <script src="jquery.js"></script> 
+ </head>
+ <body>
+  <script src="betting_game.js"></script>
+  <h1>Let the Betting Games Begin</h1>
+    <div class="game-status">
+      <div>Current Balance:</div>
+      <div id="money_balance"></div>
+      <div>Total Winnings:</div>
+      <div id="turn_winnings"></div>
+    </div>
+  <hr>
+    <div class="last-numbers">
+      <div>Last selection:</div>
+      <div id="number_selected"></div>
+      <div>Correct Answer</div>
+      <div id="random_number"></div>
+    </div>
+  <hr>
+    <button id="start-new">Start Game</button>
+  <hr>
+    <form>
+      Please place a bet between $5 and $10:<br>
+      <input type="text" name="bet" id="bet"><br>
+      Please pick a number between 1 and 10:<br>
+      <input type="text" name="number" id="number"><br><br>
+      <input type="submit" value="submit" id="play-submit">
+    </form>
+<!--     <script></script>
+ --> </body>
+</html>
