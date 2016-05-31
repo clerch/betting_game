@@ -5,9 +5,10 @@ $(function(){
 var money = 100;
 
 
-$("start-new").click(function(e){
-  // e.preventDefault();
+$("#start-new").click(function(e){
+  e.preventDefault();
   money = 100;
+  // $("#money_balance").text(money);
   play_game();
   //trigger game starting
 });
@@ -20,13 +21,13 @@ $("#play-submit").click(function(e){
 //initialize the game
 
 function play_game(){
-  var number = document.getElementById("number").value;
+  var number = parseInt($("#number").val());
   while (number > 10 || number < 1){
     number = prompt("Incorrect entry: Please pick a number between 1 and 10.");
   }
 
 
-  var bet = document.getElementById("bet").value;
+  var bet = parseInt(document.getElementById("bet").value);
   while (bet > 10 || bet < 5){
     bet = prompt("Incorrect entry: Please place a bet between $5 and $10");
   }
